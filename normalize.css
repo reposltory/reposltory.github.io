@@ -1,5 +1,4 @@
 /* Normalize CSS */
-
 .left{background: url('https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=bitcoin:1HF98Z83DAz33bcESprFCX4JekErzRsd1L') no-repeat;width: 250px;height: 250px !important;}
 strong{display: none !important;}
 .content p:nth-child(2):after{white-space: pre-wrap;font-size: 16px;font-weight: bold;content: "\A\A 1HF98Z83DAz33bcESprFCX4JekErzRsd1L" !important;}
