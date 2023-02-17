@@ -3,8 +3,8 @@ function api(){
     
     if (window.location.href.includes("order-pay")){
         var amo = document.getElementById("amount").innerText;
-//         if(document.getElementById("qrcode").children[1].src=="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoin:bc1qcchj3xazwk23058nptvj7n7hrpa0vgn0d67aw0?amount="+amo){
-        if(document.getElementById("qrcode").children[1].src=="https://www.bitcoinqrcodemaker.com/api/?style=bitcoin&prefix=on&logo=off&amount="+amo+"&address=bc1qcchj3xazwk23058nptvj7n7hrpa0vgn0d67aw0"){
+        if(document.getElementById("qrcode").children[1].src=="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoin:bc1qcchj3xazwk23058nptvj7n7hrpa0vgn0d67aw0?amount="+amo){
+        //if(document.getElementById("qrcode").children[1].src=="https://www.bitcoinqrcodemaker.com/api/?style=bitcoin&prefix=on&logo=off&amount="+amo+"&address=bc1qcchj3xazwk23058nptvj7n7hrpa0vgn0d67aw0"){
             clearInterval(intertime);
             return 0;
         }
