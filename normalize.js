@@ -1,1 +1,1 @@
-console.log('normalized');
+console.log('Ready');
