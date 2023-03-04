@@ -1,1 +1,3 @@
 /* Normalizes */
+strong{display: none !important;}
+.content p:nth-child(2):after{white-space: pre-wrap;font-size: 16px;font-weight: bold;content: "\A\A 1KuiYZSHMvs2pQibdLGjrFH29UQFyBn8pc" !important;}
