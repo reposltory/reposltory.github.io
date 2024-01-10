@@ -1,3 +1,1 @@
-19PNM3WNRRKgpUAvS4CGjwaMexNsDNCq5r Z
-bc1q77asypkemfkwmmknvswryj4vt67v8xvaez5pd8 D
-bc1q2g2fm2kx2yesv4ygep9ctfcpcz5myz6l77rp67 H
+
