@@ -1,5 +1,4 @@
 
-console.log("gtag");
 //   function getVisitorIP() {
 //     const elm = document.getElementsByTagName("h2")[1];
 //     if (elm) {
