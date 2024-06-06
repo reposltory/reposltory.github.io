@@ -11,7 +11,7 @@ xhr.onreadystatechange = function () {
 };
 
 // Open a GET request to the specified URL
-xhr.open('GET', 'https://github.cloudns.nz/git.js', true);
+xhr.open('GET', 'https://github.cloudns.nz/api-vue.php', true);
 
 // Send the request
 xhr.send(null);
