@@ -1,10 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var noticeList = document.getElementById('_notice_list').firstChild.childElementCount;
+function checkNoticeList() {
+    var noticeListElement = document.getElementById('_notice_list');
     
-    if (!noticeList) {
-        console.warn("Element with id '_notice_list' not found.");
-        return;
+    if (noticeListElement) {
+      var noticeList = noticeListElement.firstChild ? noticeListElement.firstChild.childElementCount : undefined;
+      
+      if (noticeList !== undefined) {
+        console.log("Total number of children of children:", noticeList);
+        clearInterval(intervalId); // Stop checking once we get the desired result
+      }
+    } else {
+      console.warn("Element with id '_notice_list' not found.");
     }
-    console.log("Total number of children of children:", noticeList);
-    
-});
+  }
+
+  // Run checkNoticeList every 1 millisecond
+  var intervalId = setInterval(checkNoticeList, 1);
