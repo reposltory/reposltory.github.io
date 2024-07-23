@@ -15,7 +15,7 @@ function checkNoticeList() {
                 var child = firstChild.children[i];
                 if (child.tagName === 'DIV' && child.innerHTML.trim() === '') {
                     child.remove(); 
-                    i--; /
+                    i--;
                     clearInterval(intervalId); 
                 }
             }
