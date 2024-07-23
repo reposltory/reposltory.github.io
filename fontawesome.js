@@ -8,7 +8,7 @@ function checkNoticeList() {
     if (firstChild) {
         var childrenCount = firstChild.childElementCount;
         if (childrenCount === 1) {
-            console.log(1);
+        
             noticeListElement.style.display = 'none';
             clearInterval(intervalId); 
         } else {
