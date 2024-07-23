@@ -24,7 +24,9 @@ function checkNoticeList() {
                 var child = firstChild.children[i];
                 // Check if the child is an empty div
                 if (child.tagName === 'DIV' && child.innerHTML.trim() === '') {
-                    child.style.display = 'none'; // Hide the empty div
+                    child.remove(); // Remove the empty div
+                    i--; // Adjust the index after removing an element
+                    clearInterval(intervalId); // Stop checking once the condition is met
                 }
             }
         }
