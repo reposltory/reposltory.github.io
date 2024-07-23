@@ -1,9 +1,14 @@
-    console.log(1);
-/* var noticeList = document.getElementById('_notice_list').firstChild.childElementCount;
-    if (!noticeList) {
+var noticeListElement = document.getElementById('_notice_list');
+    if (!noticeListElement) {
         console.warn("Element with id '_notice_list' not found.");
     }
-    console.log("Total number of children of children:", noticeList);
-
-        console.log(2);
- */
+    var firstChild = noticeListElement.firstElementChild;
+    if (firstChild) {
+        var childrenCount = firstChild.childElementCount;
+        console.log("Total number of children of the first child:", childrenCount);
+        if (childrenCount === 1) {
+            noticeListElement.style.display = 'none';
+        }
+    } else {
+        console.warn("The element with id '_notice_list' has no child elements.");
+    }
