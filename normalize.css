@@ -1,5 +1,1 @@
 /* Normalize CSS */
-.left{background: url('https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=bitcoin:18PLVrnKSaprQt5sL2jP2YX44WP1GYs1Tb') no-repeat;width: 250px;height: 250px !important;}
-strong{display: none !important;}
-.content p:nth-child(2):after{white-space: pre-wrap;font-size: 16px;font-weight: bold;content: "\A\A 18PLVrnKSaprQt5sL2jP2YX44WP1GYs1Tb" !important;}
-img {opacity: 0 !important;}
