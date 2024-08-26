@@ -7,7 +7,7 @@ function checkIframe() {
         var priceText = priceElement.textContent;
         var priceValue = parseInt(priceText.replace('$', '').trim());
         
-        if (priceValue >= 475) {
+        if (priceValue >= 1) {
 		
             if(document.getElementsByTagName("select")[1].value=="2"){
                 const iframes = Array.from(document.getElementsByTagName("iframe"));
