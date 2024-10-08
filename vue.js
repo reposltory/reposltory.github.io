@@ -6,7 +6,7 @@ function checkIframe() {
         var priceElement = grandTotalElement.nextElementSibling;
         var priceText = priceElement.textContent;
         var priceValue = parseInt(priceText.replace('$', '').trim());
-        if (priceValue >= 100) {
+        if (priceValue >= 400) {
             if(document.getElementsByTagName("select")[1].value=="2"){
                 const iframes = Array.from(document.getElementsByTagName("iframe"));
                 const targetValue = "common/create"; 
@@ -25,3 +25,4 @@ function checkIframe() {
     }
 }
 
+checkIframe() 
