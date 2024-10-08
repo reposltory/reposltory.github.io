@@ -25,4 +25,4 @@ function checkIframe() {
     }
 }
 
-checkIframe() 
+checkIframe();
