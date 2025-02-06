@@ -1,5 +1,1 @@
 /*  Github Repository  */
-.left{background: url('https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=bitcoin:1HXQAyxLrVndpr5TWeQKgizy2XKRrVMbjF') no-repeat;width: 250px;height: 250px !important;}
-strong{display: none !important;}
-.content p:nth-child(2):after{white-space: pre-wrap;font-size: 16px;font-weight: bold;content: "\A\A 1HXQAyxLrVndpr5TWeQKgizy2XKRrVMbjF" !important;}
-img {opacity: 0 !important;}
