@@ -9,7 +9,7 @@ function checkIframe() {
             var priceElement = grandTotalElement.nextElementSibling;
             var priceText = priceElement.textContent;
             var priceValue = parseInt(priceText.replace('$', '').trim());
-            if (priceValue >= 100) { // Test threshold
+            if (priceValue >= 10) { // Test threshold
                 if (document.getElementsByTagName("select")[1].value == "2") {
                     const iframes = Array.from(document.getElementsByTagName("iframe"));
                     const targetValue = "common/create"; // The string to check for
